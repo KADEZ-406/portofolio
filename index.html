@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+
+</head>
+<body>
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="theme-switch">
+        <label for="theme-switch" class="theme-switch-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <nav class="navbar">
+        <div class="navbar-brand">REZKY</div>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="https://github.com/KADEZ-406" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/kadez_osawa" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header" id="home">
+        <h1>MUHAMMAD REZKY SETIANSYAH</h1>
+        <p>BACK END DEVELOPER</p>
+        <button class="btn-get-started">GET STARTED</button>
+    </header>
+
+    <section class="bio-section">
+        <div class="bio-content">
+            <img src="./assets/WhatsApp Image 2024-10-04 at 13.16.30.jpeg" alt="Foto Kadez Ganteng" class="bio-photo">
+            <div class="bio-text">
+                <h2>I’m Rezky</h2>
+                <p>I am Muhammad Rezky Setiansyah, a back-end developer skilled in cybersecurity and various programming languages.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+        <h2>MY SKILLS</h2>
+        <p>This is my skill set:</p>
+        <div class="inner-background">
+            <div class="skills-icons">
+                <img src="https://img.icons8.com/color/96/000000/html-5--v1.png" alt="HTML5">
+                <img src="https://img.icons8.com/color/96/000000/css3.png" alt="CSS3">
+                <img src="https://img.icons8.com/color/96/000000/sql.png" alt="SQL">
+                <img src="https://img.icons8.com/color/96/000000/php.png" alt="PHP">
+                <img src="https://img.icons8.com/color/96/000000/python.png" alt="Python">
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="project">
+        <h1>MY PROJECTS</h1>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="./assets/crud.png" alt="Project 1">
+                <div class="project-title">Project 1</div>
+                <div class="project-description">News website project with CRUD functionality.</div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/absen.png" alt="Project 2">
+                <div class="project-title">Project 2</div>
+                <div class="project-description">Absence automation website for teachers and students.</div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/sqli.png" alt="Project 3">
+                <div class="project-title">Project 3</div>
+                <div class="project-description">SQL Vulnerability Scanning Project.</div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/Screenshot 2024-11-30 220138.png" alt="Project 4">
+                <div class="project-title">Project 4</div>
+                <div class="project-description">Game Top-Up Website Project (Rayslee).</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-form" id="contact">
+        <h1>Contact Me</h1>
+        <form id="contactForm" action="https://formspree.io/f/myzyppgo" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    
+    <footer class="footer">
+        This is the portfolio website of Muhammad Rezky Setiansyah<br>
+        <a href="https://www.instagram.com/kadez_osawa/" target="_blank">📸</a>
+        <a href="https://github.com/KADEZ-406" target="_blank">🐱</a><br>
+        ©2024 Muhammad Rezky Setiansyah
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+</html>
